@@ -1,58 +1,70 @@
-# Calendator : Event Link Generator
+# Calendator: Event Link Generator
 
-This project is a web-based application that generates Google Calendar event links and QR codes for events. Users can input event details, and the application will generate a link and a QR code that can be shared or downloaded.
+Welcome to Calendator! This handy web app helps you create Google Calendar event links and QR codes for your events. Just fill in the event details, and Calendator will do the rest. You can share the link or download the QR code to make it super easy for others to add the event to their calendars.
 
 ## Features
 
-- Input event details including title, start date, start time, end date, end time, details, and location.
-- Generate a Google Calendar event link.
-- Generate a QR code for the event link.
-- Copy the generated link to the clipboard.
-- Download the generated QR code as an image.
-- Display a live clock with the current date and time.
+- **Event Details:** Enter the event title, start date, start time, end date, end time, details, and location.
+- **Generate Link:** Create a Google Calendar event link with a single click.
+- **QR Code:** Generate a QR code for the event link.
+- **Copy Link:** Easily copy the generated link to your clipboard.
+- **Download QR Code:** Download the QR code as an image.
+- **Live Clock:** See the current date and time at the top of the page.
 
 ## Technologies Used
 
-- HTML
-- CSS (Bootstrap, Materialize, Google Fonts)
-- JavaScript
-- QRious (for QR code generation)
-- jQuery
-- Popper.js
-- Lottie (for animations)
+- **HTML**
+- **CSS:** Bootstrap, Materialize, Google Fonts
+- **JavaScript**
+- **QRious:** For generating QR codes
+- **jQuery**
+- **Popper.js**
+- **Lottie:** For animations
 
 ## Getting Started
 
-### Prerequisites
+### What You Need
 
-To run this project, you need a web browser that supports HTML5, CSS3, and JavaScript.
+All you need is a web browser that supports HTML5, CSS3, and JavaScript.
 
-### Installation
+### How to Install
 
-1. Clone the repository to your local machine:
+1. **Clone the Repository:**
     ```sh
-    git clone https://github.com/yourusername/invitation_generator.git
+    git clone https://github.com/Anzrikart/calendator.git
     ```
 
-2. Navigate to the project directory:
+2. **Navigate to the Project Directory:**
     ```sh
     cd invitation_generator
     ```
 
-3. Open the `calendar.html` file in your web browser.
+3. **Open the App:**
+    Open the `calendator.html` file in your web browser.
 
-## Usage
+## How to Use
 
-1. Open the `calendar.html` file in your web browser.
-2. Fill in the event details in the form.
-3. Click the "Generate Link" button.
-4. The generated link and QR code will be displayed.
-5. Click the "Copy Link" button to copy the link to the clipboard.
-6. Click the "Download QR Code" button to download the QR code as an image.
+1. **Open the App:**
+    Open the `calendator.html` file in your web browser.
+
+2. **Fill in the Event Details:**
+    Enter the event title, start date, start time, end date, end time, details, and location.
+
+3. **Generate the Link:**
+    Click the "Generate Link" button.
+
+4. **View the Link and QR Code:**
+    The generated link and QR code will be displayed.
+
+5. **Copy the Link:**
+    Click the "Copy Link" button to copy the link to your clipboard.
+
+6. **Download the QR Code:**
+    Click the "Download QR Code" button to download the QR code as an image.
 
 ## Live Clock
 
-The application displays a live clock at the top of the page, showing the current date and time in AM/PM format.
+Check out the live clock at the top of the page. It shows the current date and time in AM/PM format.
 
 ## Screenshots
 
