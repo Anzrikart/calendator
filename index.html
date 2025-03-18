@@ -9,6 +9,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
     <style>
         body {
             background-color: #1C1C1C; /* Background color */
@@ -58,6 +59,10 @@
             color: #1C1C1C; /* Clock text color */
             font-family: 'Montserrat', sans-serif; /* Use Montserrat font for clock */
         }
+        .qr-code-container {
+            text-align: center;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
@@ -102,12 +107,17 @@
             </div>
             <button type="submit" class="btn btn-primary btn-block">Generate Link</button>
         </form>
-        <div class="mt-4 text-center">
+        <div class="mt-4 text-center" id="generatedLinkContainer" style="display: none;">
             <h2>Generated Link</h2>
             <div class="p-3 bg-light border rounded">
                 <a id="generatedLink" href="#" target="_blank" class="d-block mb-2 text-break"></a>
             </div>
             <button id="copyButton" class="btn btn-secondary mt-2">Copy Link</button>
+        </div>
+        <div class="qr-code-container" id="qrCodeContainer" style="display: none;">
+            <canvas id="qrCode"></canvas>
+            <br>
+            <a id="downloadQrCode" class="btn btn-secondary mt-2" download="qrcode.png">Download QR Code</a>
         </div>
     </div>
 
@@ -166,8 +176,22 @@
             generatedLinkElement.href = link;
             generatedLinkElement.textContent = link;
 
+            // Show the generated link container
+            document.getElementById('generatedLinkContainer').style.display = 'block';
+            document.getElementById('qrCodeContainer').style.display = 'block';
+
+            // Generate QR code
+            const qr = new QRious({
+                element: document.getElementById('qrCode'),
+                value: link,
+                size: 200
+            });
+
+            // Set download link for QR code
+            document.getElementById('downloadQrCode').href = qr.toDataURL('image/png');
+
             // Provide user feedback
-            alert('Link generated successfully!');
+            alert('Link and QR code generated successfully!');
         });
 
         document.getElementById('copyButton').addEventListener('click', function() {
