@@ -36,7 +36,7 @@ All you need is a web browser that supports HTML5, CSS3, and JavaScript.
 
 2. **Navigate to the Project Directory:**
     ```sh
-    cd invitation_generator
+    cd calendator-main
     ```
 
 3. **Open the App:**
