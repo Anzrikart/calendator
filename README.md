@@ -1,6 +1,6 @@
 # Calendator: Event Link Generator
 
-Welcome to Calendator! This handy web app helps you create Google Calendar event links and QR codes for your events. Just fill in the event details, and Calendator will do the rest. You can share the link or download the QR code to make it super easy for others to add the event to their calendars.
+Hey there! Welcome to Calendator! 🎉 This awesome web app helps you create Google Calendar event links and QR codes for your events. Just fill in the event details, and Calendator will handle the rest. You can share the link or download the QR code to make it super easy for others to add the event to their calendars.
 
 ## Features
 
@@ -36,16 +36,16 @@ All you need is a web browser that supports HTML5, CSS3, and JavaScript.
 
 2. **Navigate to the Project Directory:**
     ```sh
-    cd calendator-main
+    cd invitation_generator
     ```
 
 3. **Open the App:**
-    Open the `calendator.html` file in your web browser.
+    Open the `calendar.html` file in your web browser.
 
 ## How to Use
 
 1. **Open the App:**
-    Open the `calendator.html` file in your web browser.
+    Open the `calendar.html` file in your web browser.
 
 2. **Fill in the Event Details:**
     Enter the event title, start date, start time, end date, end time, details, and location.
@@ -68,7 +68,9 @@ Check out the live clock at the top of the page. It shows the current date and t
 
 ## Screenshots
 
-![Event Link Generator](screenshot.png)
+Here's a sneak peek of Calendator in action:
+
+![Calendator Screenshot](calendator.png)
 
 ## License
 
