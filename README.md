@@ -11,16 +11,6 @@ Hey there! Welcome to Calendator! 🎉 This awesome web app helps you create Goo
 - **Download QR Code:** Download the QR code as an image.
 - **Live Clock:** See the current date and time at the top of the page.
 
-## Technologies Used
-
-- **HTML**
-- **CSS:** Bootstrap, Materialize, Google Fonts
-- **JavaScript**
-- **QRious:** For generating QR codes
-- **jQuery**
-- **Popper.js**
-- **Lottie:** For animations
-
 ## Getting Started
 
 ### What You Need
@@ -36,16 +26,16 @@ All you need is a web browser that supports HTML5, CSS3, and JavaScript.
 
 2. **Navigate to the Project Directory:**
     ```sh
-    cd invitation_generator
+    cd calendator_main
     ```
 
 3. **Open the App:**
-    Open the `calendar.html` file in your web browser.
+    Open the `calendator.html` file in your web browser.
 
 ## How to Use
 
 1. **Open the App:**
-    Open the `calendar.html` file in your web browser.
+    Open the `calendator.html` file in your web browser.
 
 2. **Fill in the Event Details:**
     Enter the event title, start date, start time, end date, end time, details, and location.
